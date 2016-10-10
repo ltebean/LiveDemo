@@ -31,11 +31,10 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        session.captureDevicePosition = .front
-
+        
         session.running = true
         let stream = LFLiveStreamInfo()
-        stream.url = "rtmp://rtmp.shoppie.tv/live/test";
+        stream.url = "rtmp://106.187.100.229/live/test";
         session.startLive(stream)
     }
     
